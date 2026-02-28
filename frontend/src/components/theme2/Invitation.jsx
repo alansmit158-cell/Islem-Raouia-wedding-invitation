@@ -4,6 +4,7 @@ import Hero from './Hero';
 import Timeline from './Timeline';
 import Location from './Location';
 import DetailsSection from './DetailsSection';
+import DressCode from './DressCode';
 import RsvpSection from './RsvpSection';
 import Countdown from './Countdown';
 import Footer from './Footer';
@@ -28,6 +29,8 @@ export default function Invitation({ weddingData, language }) {
 
                 <DetailsSection weddingData={weddingData} language={language} />
                 <Timeline weddingData={weddingData} language={language} />
+
+                <DressCode language={language} />
 
                 <RsvpSection weddingData={weddingData} language={language} />
 

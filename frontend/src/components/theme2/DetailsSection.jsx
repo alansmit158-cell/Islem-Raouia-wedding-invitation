@@ -100,9 +100,7 @@ export default function DetailsSection({ weddingData, language = 'fr' }) {
                                 <p className="text-gray-600 leading-relaxed">
                                     Ci diciamo di Sì, e festeggiamo fino a tarda notte!<br /><br />
                                     <strong>In programma:</strong> Amore, risate e balli.<br />
-                                    <strong>Alla fine:</strong> contiamo su di voi per infiammare la pista da ballo dopo la cerimonia.<br /><br />
-                                    <strong>Dress code:</strong><br />
-                                    Venite come siete, ma più eleganti! Sorrisi obbligatori 😁
+                                    <strong>Alla fine:</strong> contiamo su di voi per infiammare la pista da ballo dopo la cerimonia.
                                 </p>
                             </div>
                         ) : (
@@ -111,9 +109,7 @@ export default function DetailsSection({ weddingData, language = 'fr' }) {
                                 <p className="text-gray-600 leading-relaxed">
                                     On se dit Oui, et on fait la fête jusqu'au bout de la nuit !<br /><br />
                                     <strong>Au programme:</strong> Amour, rires et danse.<br />
-                                    <strong>À la fin:</strong> on compte sur vous pour mettre le feu au dancefloor après la cérémonie.<br /><br />
-                                    <strong>Pour le dress code :</strong><br />
-                                    Venez comme vous êtes, mais en plus chic ! Sourires obligatoires 😁
+                                    <strong>À la fin:</strong> on compte sur vous pour mettre le feu au dancefloor après la cérémonie.
                                 </p>
                             </div>
                         )}
