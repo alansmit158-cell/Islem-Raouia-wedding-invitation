@@ -78,7 +78,10 @@ export default function RsvpSection({ weddingData, language = 'fr' }) {
     const content = t[language] || t.fr;
 
     return (
-        <Section className="bg-wedding-gold text-white">
+        <Section className="bg-wedding-gold text-white relative">
+            {/* Soft Blur/Fade Transition from white section above */}
+            <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-white to-transparent pointer-events-none z-0 opacity-100" />
+
             <div className="max-w-2xl mx-auto">
                 <div className="mb-12">
                     <Users className="w-12 h-12 mx-auto mb-6 opacity-80" />
