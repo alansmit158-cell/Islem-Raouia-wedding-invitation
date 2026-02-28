@@ -14,7 +14,7 @@ export default function Hero({ weddingData }) {
                     muted
                     playsInline
                     preload="none"
-                    poster="/image.png"
+                    poster="/poster.webp"
                     className="w-full h-full object-cover animate-fade-in scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/10"></div>
