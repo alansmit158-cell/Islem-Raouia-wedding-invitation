@@ -42,7 +42,7 @@ export default function RibbonOpening({ onOpen, onMusicStart, wedding }) {
                         variants={{ hidden: { opacity: 0, scale: 0.9 }, visible: { opacity: 1, scale: 1, transition: { type: "spring", bounce: 0.4, duration: 1.5 } } }}
                         className="font-script text-7xl sm:text-[7rem] text-[#2F3628] mb-4 drop-shadow-sm"
                     >
-                        {wedding ? `${wedding.groom} & ${wedding.bride}` : 'Pedro & Julia'}
+                        {wedding ? `${wedding.bride} & ${wedding.groom}` : 'Raouia & Islem'}
                     </motion.h1>
 
                     <motion.div variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.8 } } }}>
