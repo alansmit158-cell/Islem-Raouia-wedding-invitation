@@ -5,6 +5,7 @@ import Timeline from './Timeline';
 import Location from './Location';
 import DetailsSection from './DetailsSection';
 import DressCode from './DressCode';
+import ClosingMessage from './ClosingMessage';
 import RsvpSection from './RsvpSection';
 import Countdown from './Countdown';
 import Footer from './Footer';
@@ -33,6 +34,8 @@ export default function Invitation({ weddingData, language }) {
                 <DressCode language={language} />
 
                 <RsvpSection weddingData={weddingData} language={language} />
+
+                <ClosingMessage language={language} />
 
                 <Footer />
             </div>
