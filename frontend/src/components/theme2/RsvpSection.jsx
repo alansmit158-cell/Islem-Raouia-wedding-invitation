@@ -78,7 +78,7 @@ export default function RsvpSection({ weddingData, language = 'fr' }) {
     const content = t[language] || t.fr;
 
     return (
-        <Section className="bg-wedding-sage text-white">
+        <Section className="bg-wedding-gold text-white">
             <div className="max-w-2xl mx-auto">
                 <div className="mb-12">
                     <Users className="w-12 h-12 mx-auto mb-6 opacity-80" />
@@ -108,7 +108,7 @@ export default function RsvpSection({ weddingData, language = 'fr' }) {
                                             key={num}
                                             type="button"
                                             onClick={() => setGuestCount(num)}
-                                            className={`w-10 h-10 rounded-full border transition-all flex items-center justify-center font-bold ${guestCount === num ? 'bg-white text-wedding-sage border-white scale-110' : 'border-white/30 text-white hover:border-white/60'}`}
+                                            className={`w-10 h-10 rounded-full border transition-all flex items-center justify-center font-bold ${guestCount === num ? 'bg-white text-wedding-gold border-white scale-110' : 'border-white/30 text-white hover:border-white/60'}`}
                                         >
                                             {num}
                                         </button>
@@ -120,7 +120,7 @@ export default function RsvpSection({ weddingData, language = 'fr' }) {
                                 whileHover={{ scale: 1.02 }}
                                 whileTap={{ scale: 0.98 }}
                                 disabled={isSubmitting || remainingSeats <= 0}
-                                className={`w-full py-4 rounded-full font-serif font-bold uppercase tracking-widest text-sm shadow-lg transition-all ${remainingSeats <= 0 ? 'bg-gray-400 cursor-not-allowed' : 'bg-wedding-cream text-wedding-sage-dark hover:bg-white'}`}
+                                className={`w-full py-4 rounded-full font-serif font-bold uppercase tracking-widest text-sm shadow-lg transition-all ${remainingSeats <= 0 ? 'bg-gray-400 cursor-not-allowed' : 'bg-wedding-cream text-[#4B5345] hover:bg-white'}`}
                             >
                                 {isSubmitting ? "..." : content.button}
                             </motion.button>
