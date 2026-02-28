@@ -2,6 +2,9 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 export default function Hero({ weddingData }) {
+    // Définition de la langue pour plus de clarté
+    const lang = weddingData?.language || 'fr';
+
     return (
         <div className="h-[100dvh] w-full relative flex flex-col items-center justify-center p-6 text-center select-none overflow-hidden">
 
@@ -28,7 +31,7 @@ export default function Hero({ weddingData }) {
                     transition={{ duration: 0.8 }}
                     className="text-white drop-shadow-md tracking-[0.2em] text-xs sm:text-sm uppercase mb-6 font-semibold bg-black/10 px-3 py-1 rounded-full backdrop-blur-[2px]"
                 >
-                    {weddingData?.language === 'it' ? 'CI SPOSIAMO' : 'NOUS NOUS MARIONS'}
+                    {lang === 'it' ? 'CI SPOSIAMO' : 'NOUS NOUS MARIONS'}
                 </motion.p>
 
                 <motion.h1
@@ -56,17 +59,20 @@ export default function Hero({ weddingData }) {
                     transition={{ duration: 1, delay: 1 }}
                     className="text-3xl sm:text-4xl font-serif text-white drop-shadow-md italic"
                 >
-                    {typeof weddingData?.formattedDate === 'object' ? weddingData.formattedDate[weddingData?.language || 'fr'] : weddingData?.formattedDate}
+                    {typeof weddingData?.formattedDate === 'object' ? weddingData.formattedDate[lang] : weddingData?.formattedDate}
                 </motion.p>
             </div>
 
+            {/* Section MODIFIÉE ici pour le multilingue */}
             <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 2, duration: 1 }}
                 className="absolute bottom-12 z-10 animate-bounce cursor-pointer flex flex-col items-center gap-2"
             >
-                <span className="text-white text-xs tracking-widest uppercase drop-shadow-md">Découvrir</span>
+                <span className="text-white text-xs tracking-widest uppercase drop-shadow-md">
+                    {lang === 'it' ? 'SCOPRIRE' : 'DÉCOUVRIR'}
+                </span>
                 <div className="w-[1px] h-8 bg-white/50"></div>
             </motion.div>
         </div>
