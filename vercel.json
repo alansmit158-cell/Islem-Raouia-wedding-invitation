@@ -2,5 +2,15 @@
     "buildCommand": "npm run build --prefix frontend",
     "outputDirectory": "frontend/dist",
     "installCommand": "npm install --prefix frontend",
-    "framework": "vite"
+    "framework": "vite",
+    "rewrites": [
+        {
+            "source": "/api/(.*)",
+            "destination": "/api"
+        },
+        {
+            "source": "/(.*)",
+            "destination": "/$1"
+        }
+    ]
 }
