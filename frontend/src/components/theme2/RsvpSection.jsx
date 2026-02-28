@@ -28,8 +28,9 @@ export default function RsvpSection({ weddingData, language = 'fr' }) {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setIsSubmitting(true);
+        const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5005';
         try {
-            const response = await fetch(`http://localhost:5005/api/weddings/${weddingData.id}/rsvp`, {
+            const response = await fetch(`${API_URL}/api/weddings/${weddingData.id}/rsvp`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ guestCount }),

@@ -61,11 +61,12 @@ function App() {
   const [liveWeddingData, setLiveWeddingData] = useState(weddingData);
   const introAudio = useRef(new Audio('/wedding.mp3'));
   const mainAudio = useRef(new Audio('/music.mp3'));
+  const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5005';
 
   useEffect(() => {
     const fetchWeddingData = async () => {
       try {
-        const response = await fetch(`http://localhost:5005/api/weddings/raouia-islem`);
+        const response = await fetch(`${API_URL}/api/weddings/raouia-islem`);
         if (response.ok) {
           const data = await response.json();
           // Merge dynamic fields into static weddingData
