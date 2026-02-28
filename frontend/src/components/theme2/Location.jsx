@@ -8,8 +8,13 @@ const Section = ({ children, delay = 0 }) => (
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.8, delay, ease: "easeOut" }}
-        className="py-12 sm:py-20 text-center px-4 w-full bg-white/50"
+        className="py-12 sm:py-20 text-center px-4 w-full bg-white/50 relative"
     >
+        {/* Top Fade from Sand Hero wrapper */}
+        <div className="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-wedding-sand to-transparent pointer-events-none z-0" />
+
+        {/* Bottom Fade to Sand Countdown below */}
+        <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-wedding-sand to-transparent pointer-events-none z-0" />
         {children}
     </motion.div>
 );
