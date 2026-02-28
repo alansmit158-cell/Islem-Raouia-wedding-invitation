@@ -107,7 +107,7 @@ export default function DetailsSection({ weddingData, language = 'fr' }) {
                                 <h4 className="font-script text-3xl text-wedding-gold-dark mb-4">Français</h4>
                                 <p className="text-gray-600 leading-relaxed">
                                     On se dit Oui, et on fait la fête jusqu'au bout de la nuit !<br /><br />
-                                    <strong>Au programme :</strong> Cibo buono, Cocktail, risate e balli.
+                                    <strong>Au programme :</strong> Bonne cuisine, Cocktails, rires et danse.
                                 </p>
                             </div>
                         )}
