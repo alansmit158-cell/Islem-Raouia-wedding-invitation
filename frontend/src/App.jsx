@@ -59,8 +59,6 @@ function App() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [language, setLanguage] = useState('fr');
   const [liveWeddingData, setLiveWeddingData] = useState(weddingData);
-  const introAudio = useRef(new Audio('/wedding.mp3'));
-  const mainAudio = useRef(new Audio('/maher-zain.mp3'));
   const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5005';
 
   useEffect(() => {
@@ -79,61 +77,13 @@ function App() {
     fetchWeddingData();
   }, []);
 
-  useEffect(() => {
-    introAudio.current.loop = true;
-    mainAudio.current.loop = true;
-
-    // Attempt Autoplay
-    introAudio.current.play()
-      .then(() => setIsPlaying(true))
-      .catch(e => console.log("Autoplay blocked by browser policy:", e));
-
-    return () => {
-      introAudio.current.pause();
-      mainAudio.current.pause();
-    };
-  }, []);
-
   const toggleMusic = () => {
-    if (isPlaying) {
-      introAudio.current.pause();
-      mainAudio.current.pause();
-      setIsPlaying(false);
-    } else {
-      if (isEnvelopeOpen) {
-        mainAudio.current.play().catch(e => console.error("Play failed:", e));
-      } else {
-        introAudio.current.play().catch(e => console.error("Play failed:", e));
-      }
-      setIsPlaying(true);
-    }
+    setIsPlaying(!isPlaying);
   };
 
   const handleOpen = () => {
-    if (isPlaying) {
-      const fadeDuration = 3000;
-      const steps = 30;
-      const intervalTime = fadeDuration / steps;
-
-      mainAudio.current.volume = 0;
-      mainAudio.current.play().catch(console.error);
-
-      let currentStep = 0;
-      const fadeInterval = setInterval(() => {
-        currentStep++;
-        const progress = currentStep / steps;
-        introAudio.current.volume = Math.max(0, 1 - progress);
-        mainAudio.current.volume = Math.min(1, progress);
-
-        if (currentStep >= steps) {
-          clearInterval(fadeInterval);
-          introAudio.current.pause();
-          introAudio.current.currentTime = 0;
-          introAudio.current.volume = 1;
-        }
-      }, intervalTime);
-    }
     setIsEnvelopeOpen(true);
+    setIsPlaying(true);
   };
 
   return (
