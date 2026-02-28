@@ -60,7 +60,7 @@ function App() {
   const [language, setLanguage] = useState('fr');
   const [liveWeddingData, setLiveWeddingData] = useState(weddingData);
   const introAudio = useRef(new Audio('/wedding.mp3'));
-  const mainAudio = useRef(new Audio('/music.mp3'));
+  const mainAudio = useRef(new Audio('/maher-zain.mp3'));
   const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5005';
 
   useEffect(() => {
