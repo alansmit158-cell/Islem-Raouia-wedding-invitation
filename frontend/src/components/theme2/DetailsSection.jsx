@@ -99,7 +99,7 @@ export default function DetailsSection({ weddingData, language = 'fr' }) {
                                 <h4 className="font-script text-3xl text-wedding-gold-dark mb-4">Italiano</h4>
                                 <p className="text-gray-600 leading-relaxed">
                                     Ci diciamo di Sì, e festeggiamo fino a tarda notte!<br /><br />
-                                    <strong>In programma:</strong> Amore, risate e balli.
+                                    <strong>In programma:</strong> Cibo buono, Cocktail, risate e balli.
                                 </p>
                             </div>
                         ) : (
@@ -107,7 +107,7 @@ export default function DetailsSection({ weddingData, language = 'fr' }) {
                                 <h4 className="font-script text-3xl text-wedding-gold-dark mb-4">Français</h4>
                                 <p className="text-gray-600 leading-relaxed">
                                     On se dit Oui, et on fait la fête jusqu'au bout de la nuit !<br /><br />
-                                    <strong>Au programme:</strong> Amour, rires et danse.
+                                    <strong>Au programme :</strong> Cibo buono, Cocktail, risate e balli.
                                 </p>
                             </div>
                         )}
