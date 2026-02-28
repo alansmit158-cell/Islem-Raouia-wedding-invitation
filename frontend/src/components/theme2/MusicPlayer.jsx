@@ -25,11 +25,10 @@ export default function MusicPlayer({ phase }) {
             <audio
                 ref={audioRef}
                 loop
-                preload="auto"
-                onError={(e) => console.warn("Audio file failed to load. Fallback might be needed.", e)}
+                preload="none"
+                onError={(e) => console.warn("Audio file failed to load.", e)}
             >
                 <source src="/maher-zain.mp3" type="audio/mpeg" />
-                <source src="/wedding.mp3" type="audio/mpeg" />
             </audio>
 
             <button

@@ -13,6 +13,8 @@ export default function Hero({ weddingData }) {
                     loop
                     muted
                     playsInline
+                    preload="none"
+                    poster="/bg-wedding.png"
                     className="w-full h-full object-cover animate-fade-in scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/10"></div>
