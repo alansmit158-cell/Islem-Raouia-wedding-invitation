@@ -28,7 +28,7 @@ export default function RsvpSection({ weddingData, language = 'fr' }) {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setIsSubmitting(true);
-        const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5005';
+        const API_URL = import.meta.env.VITE_API_URL || 'https://wedding-backend-aura.vercel.app';
         try {
             const response = await fetch(`${API_URL}/api/weddings/${weddingData.id}/rsvp`, {
                 method: 'POST',

@@ -11,9 +11,6 @@ export default function MusicPlayer({ phase }) {
 
         if (phase === 'main') {
             audio.play().catch(err => console.log("Playback prevented:", err));
-        } else if (phase === 'intro') {
-            // Optionnel: On peut aussi lancer la musique dès l'intro si on veut
-            audio.play().catch(err => console.log("Autoplay prevented:", err));
         }
     }, [phase]);
 

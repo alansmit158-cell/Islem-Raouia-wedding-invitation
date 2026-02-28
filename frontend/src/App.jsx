@@ -59,7 +59,7 @@ function App() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [language, setLanguage] = useState('fr');
   const [liveWeddingData, setLiveWeddingData] = useState(weddingData);
-  const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5005';
+  const API_URL = import.meta.env.VITE_API_URL || 'https://wedding-backend-aura.vercel.app';
 
   useEffect(() => {
     const fetchWeddingData = async () => {
