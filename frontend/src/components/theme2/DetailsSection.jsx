@@ -90,7 +90,7 @@ export default function DetailsSection({ weddingData, language = 'fr' }) {
                         🎊
                     </div>
                     <h3 className="text-3xl font-serif text-gray-800 mb-8">
-                        {language === 'it' ? "✨ La Serata" : "✨ La Soirée"}
+                        {language === 'it' ? "✨ Serata Giovani" : "✨ Soirée Jeune"}
                     </h3>
 
                     <div className="grid gap-8 text-left max-w-2xl mx-auto bg-white p-8 rounded-2xl shadow-sm border border-wedding-gold/10">
@@ -98,16 +98,18 @@ export default function DetailsSection({ weddingData, language = 'fr' }) {
                             <div>
                                 <h4 className="font-script text-3xl text-wedding-gold-dark mb-4">Italiano</h4>
                                 <p className="text-gray-600 leading-relaxed">
-                                    Ci diciamo di Sì, e festeggiamo fino a tarda notte!<br /><br />
-                                    <strong>In programma:</strong> Cibo buono, Cocktail, risate e balli.
+                                    Festeggiamo insieme ai giovani fino a tarda notte!<br /><br />
+                                    <strong>De 21:00 a 01:00</strong><br />
+                                    <strong>In programma:</strong> Una serata festiva dedicata ai giovani.
                                 </p>
                             </div>
                         ) : (
                             <div>
                                 <h4 className="font-script text-3xl text-wedding-gold-dark mb-4">Français</h4>
                                 <p className="text-gray-600 leading-relaxed">
-                                    On se dit Oui, et on fait la fête jusqu'au bout de la nuit !<br /><br />
-                                    <strong>Au programme :</strong> Cibo buono, Cocktail, risate e balli.
+                                    On fait la fête avec les jeunes jusqu'au bout de la nuit !<br /><br />
+                                    <strong>De 21h00 à 01h00</strong><br />
+                                    <strong>Au programme :</strong> Une soirée festive dédiée à la jeunesse.
                                 </p>
                             </div>
                         )}

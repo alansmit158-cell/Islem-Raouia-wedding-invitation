@@ -42,14 +42,14 @@ const weddingData = {
     {
       time: "21:00 - 01:00",
       title: {
-        fr: "✨ La Soirée",
-        it: "✨ La Serata"
+        fr: "✨ Soirée Jeune",
+        it: "✨ Serata Giovani"
       },
-      iconName: "Music",
       description: {
-        fr: "Fête dédiée à la jeunesse. Pas de dress code particulier.",
-        it: "Serata dedicata ai giovani. Nessun codice di abbigliamento richiesto."
-      }
+        fr: "Une soirée festive dédiée à la jeunesse.",
+        it: "Una serata festiva dedicata ai giovani."
+      },
+      iconName: "Music"
     }
   ]
 };
