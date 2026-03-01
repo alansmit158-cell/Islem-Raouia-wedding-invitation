@@ -30,7 +30,7 @@ const weddingData = {
     {
       time: "17:00",
       title: {
-        fr: "Mahdia Palace (Espace plein air)",
+        fr: "Mahdia Palace (Espace en plein air)",
         it: "Mahdia Palace (Spazio all'aperto)"
       },
       iconName: "MapPin"
