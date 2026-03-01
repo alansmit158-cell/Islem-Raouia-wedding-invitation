@@ -18,11 +18,11 @@ export default function DressCode({ language = 'fr' }) {
     const content = {
         fr: {
             title: "Dress Code",
-            text: "Apportez votre plus beau sourire, votre bonne énergie et votre joie. VENEZ COMME VOUS ÊTES. MAIS EN PLUS CHIC"
+            text: "Apportez votre plus beau sourire , et votre bonne énergie . VENEZ COMME VOUS ÊTES. MAIS EN PLUS CHIC"
         },
         it: {
             title: "Codice di Abbigliamento",
-            text: "Portate il vostro sorriso più bello, la vostra buona energia e la vostra gioia. VENITE COME SIETE. MA PIÙ ELEGANTI"
+            text: "Portate il vostro sorriso più bello , e la vostra buona energia . VENITE COME SIETE. MA PIÙ ELEGANTI"
         }
     };
 
@@ -54,3 +54,4 @@ export default function DressCode({ language = 'fr' }) {
         </Section>
     );
 }
+
