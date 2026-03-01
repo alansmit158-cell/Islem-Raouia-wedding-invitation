@@ -58,7 +58,7 @@ export default function DetailsSection({ weddingData, language = 'fr' }) {
                         🥂
                     </div>
                     <h3 className="text-3xl font-serif text-gray-800 mb-8">
-                        {language === 'it' ? "🕊️ La Cerimonia & Ricevimento" : "🕊️ La Cérémonie & Réception"}
+                        {language === 'it' ? "🕊️ La Cerimonia & Il Ricevimento" : "🕊️  Cérémonie & Réception"}
                     </h3>
 
                     <div className="grid gap-8 text-left max-w-2xl mx-auto bg-white p-8 rounded-2xl shadow-sm border border-wedding-gold/10">
@@ -75,8 +75,8 @@ export default function DetailsSection({ weddingData, language = 'fr' }) {
                             <div>
                                 <h4 className="font-script text-3xl text-wedding-gold-dark mb-4">Français</h4>
                                 <p className="text-gray-600 leading-relaxed">
-                                    Nous avons le bonheur de vous inviter à célébrer notre union.<br /><br />
-                                    La célébration du mariage et la réception auront lieu au :<br />
+                                    Nous avons le L'honneur de vous inviter à célébrer notre union.<br /><br />
+                                    La célébration du mariage et la réception auront lieu à :<br />
                                     <strong>Mahdia Palace (Espace plein air) De 17h00 à 19h00</strong>
                                 </p>
                             </div>
