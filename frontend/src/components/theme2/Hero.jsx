@@ -48,7 +48,8 @@ export default function Hero({ weddingData }) {
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 1, delay: 0.3 }}
-                    className="text-6xl sm:text-8xl font-script text-[#4B5345] mb-4 leading-tight flex flex-col items-center gap-4 py-4"
+                    style={{ fontFamily: 'var(--font-script)' }}
+                    className="text-6xl sm:text-8xl text-[#4B5345] mb-4 leading-tight flex flex-col items-center gap-4 py-4"
                 >
                     <span>{weddingData?.bride}</span>
                     <img src="/alliances.png" alt="&" className="h-12 sm:h-20 object-contain opacity-60" />
