@@ -77,7 +77,7 @@ export default function DetailsSection({ weddingData, language = 'fr' }) {
                                 <p className="text-gray-600 leading-relaxed">
                                     Nous avons L'honneur de vous inviter à célébrer notre union.<br /><br />
                                     Le contrat de mariage et la réception auront lieu à :<br />
-                                    <strong>Mahdia Palace (Espace plein air) De 17h00 à 19h00</strong>
+                                    <strong>Mahdia Palace (Espace en plein air) De 17h00 à 19h00</strong>
                                 </p>
                             </div>
                         )}
