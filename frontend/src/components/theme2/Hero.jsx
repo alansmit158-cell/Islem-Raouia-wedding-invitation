@@ -40,7 +40,7 @@ export default function Hero({ weddingData }) {
                     transition={{ duration: 0.8 }}
                     className="text-[#4B5345] drop-shadow-sm tracking-[0.2em] text-2xl sm:text-3xl mb-6 font-serif uppercase"
                 >
-                    {lang === 'it' ? 'Ci sposiamo' : "WE'RE GETTING MARRIED"}
+                    {lang === 'it' ? 'Ci sposiamo' : "Célébration de notre union"}
                 </motion.p>
 
                 <motion.h1

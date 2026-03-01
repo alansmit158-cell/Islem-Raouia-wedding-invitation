@@ -16,24 +16,50 @@ const Section = ({ children, className = "" }) => (
 
 export default function ClosingMessage({ language = 'fr' }) {
     const content = {
-        fr: "on compte sur vous pour mettre le feu au dancefloor après la cérémonie.",
-        it: "contiamo su di voi per infiammare la pista da ballo dopo la cerimonia."
+        fr: {
+            label: "MOT DE FIN",
+            message: "Préparez-vous à célébrer l’amour, la joie et la fête !",
+            note: "Célébration réservée aux adultes."
+        },
+        it: {
+            label: "MESSAGGIO DI CHIUSURA",
+            message: "Preparatevi a celebrare l'amore, la gioia e la festa!",
+            note: "Celebrazione riservata agli adulti."
+        }
     };
 
-    const text = content[language] || content.fr;
+    const { label, message, note } = content[language] || content.fr;
 
     return (
-        <Section className="bg-wedding-sand/50">
-            <div className="max-w-xl mx-auto">
-                <Music className="w-8 h-8 text-wedding-gold mx-auto mb-6 opacity-60" />
-                <p className="font-serif italic text-2xl text-wedding-gold-dark leading-relaxed">
-                    <strong>{language === 'it' ? "Alla fine:" : "À la fin :"}</strong><br />
-                    {text}
+        <Section className="bg-white">
+            <div className="max-w-xl mx-auto flex flex-col items-center">
+                <Music className="w-10 h-10 text-wedding-gold opacity-60 mb-8" />
+
+                <div className="bg-white px-6 py-1 rounded-full mb-8 shadow-sm">
+                    <span className="text-[10px] font-serif tracking-[0.3em] font-bold text-[#4B5345]">
+                        {label}
+                    </span>
+                </div>
+
+                <p className="font-serif text-2xl sm:text-3xl text-[#2F3628] leading-tight mb-4 px-4 font-bold">
+                    {message}
                 </p>
-                <div className="mt-8 flex justify-center gap-2">
-                    <span className="w-1 h-1 rounded-full bg-wedding-gold/30" />
-                    <span className="w-1 h-1 rounded-full bg-wedding-gold/30" />
-                    <span className="w-1 h-1 rounded-full bg-wedding-gold/30" />
+
+                {/* Decorative line matching the pink scribble-like style if possible, or a simple decorative element */}
+                <div className="h-[2px] w-16 bg-pink-400/30 rounded-full mb-4 -rotate-1"></div>
+
+                <p className="font-serif text-sm text-[#4B5345] mb-6 font-medium italic">
+                    {note}
+                </p>
+
+                <p className="font-script text-4xl sm:text-5xl text-[#2F3628] mb-12">
+                    Raouia & Islem
+                </p>
+
+                <div className="flex justify-center gap-2 mb-4">
+                    <span className="w-1.5 h-1.5 rounded-full bg-wedding-gold/20" />
+                    <span className="w-1.5 h-1.5 rounded-full bg-wedding-gold/20" />
+                    <span className="w-1.5 h-1.5 rounded-full bg-wedding-gold/20" />
                 </div>
             </div>
         </Section>
