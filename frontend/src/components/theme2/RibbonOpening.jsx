@@ -14,7 +14,7 @@ export default function RibbonOpening({ onOpen, onMusicStart, wedding }) {
         // 3. Delay content switch
         setTimeout(() => {
             if (onOpen) onOpen();
-        }, 1500);
+        }, 10000);
     };
 
     return (

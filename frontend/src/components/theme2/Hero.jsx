@@ -41,7 +41,7 @@ export default function Hero({ weddingData }) {
                     className="text-7xl sm:text-[8rem] font-script text-[#2F3628] mb-4 leading-none mx-[-1rem]"
                     style={{ textShadow: '2px 2px 10px rgba(255,255,255,0.4)' }}
                 >
-                    {weddingData?.bride} <img src="/image-removebg-preview (2).png" alt="&" className="inline-block h-12 sm:h-20 mx-2 sm:mx-4 align-middle object-contain" /> {weddingData?.groom}
+                    {weddingData?.bride} <img src="/alliances.png" alt="&" className="inline-block h-12 sm:h-20 mx-2 sm:mx-4 align-middle object-contain" /> {weddingData?.groom}
                 </motion.h1>
 
                 <motion.div

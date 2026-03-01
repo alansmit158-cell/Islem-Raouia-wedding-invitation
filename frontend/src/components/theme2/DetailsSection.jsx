@@ -54,8 +54,8 @@ export default function DetailsSection({ weddingData, language = 'fr' }) {
             <div className="max-w-3xl mx-auto space-y-16">
                 {/* Content Section */}
                 <div className="text-center">
-                    <div className="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center shadow-sm mb-6">
-                        <Shirt className="w-8 h-8 text-wedding-gold" />
+                    <div className="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center shadow-sm mb-6 text-3xl">
+                        🥂
                     </div>
                     <h3 className="text-3xl font-serif text-gray-800 mb-8">
                         {language === 'it' ? "🕊️ La Cerimonia & Ricevimento" : "🕊️ La Cérémonie & Réception"}
@@ -67,7 +67,7 @@ export default function DetailsSection({ weddingData, language = 'fr' }) {
                                 <h4 className="font-script text-3xl text-wedding-gold-dark mb-4">Italiano</h4>
                                 <p className="text-gray-600 leading-relaxed">
                                     Siamo lieti di invitarvi a celebrare la nostra unione.<br /><br />
-                                    La firma del contratto di matrimonio e il ricevimento si terranno presso:<br />
+                                    La celebrazione del matrimonio e il ricevimento si terranno presso:<br />
                                     <strong>Mahdia Palace (Spazio all'aperto) Dalle 17:00 alle 19:00</strong>
                                 </p>
                             </div>
@@ -76,7 +76,7 @@ export default function DetailsSection({ weddingData, language = 'fr' }) {
                                 <h4 className="font-script text-3xl text-wedding-gold-dark mb-4">Français</h4>
                                 <p className="text-gray-600 leading-relaxed">
                                     Nous avons le bonheur de vous inviter à célébrer notre union.<br /><br />
-                                    La signature du contrat de mariage et la réception auront lieu au :<br />
+                                    La célébration du mariage et la réception auront lieu au :<br />
                                     <strong>Mahdia Palace (Espace plein air) De 17h00 à 19h00</strong>
                                 </p>
                             </div>
@@ -107,7 +107,7 @@ export default function DetailsSection({ weddingData, language = 'fr' }) {
                                 <h4 className="font-script text-3xl text-wedding-gold-dark mb-4">Français</h4>
                                 <p className="text-gray-600 leading-relaxed">
                                     On se dit Oui, et on fait la fête jusqu'au bout de la nuit !<br /><br />
-                                    <strong>Au programme :</strong> Bonne cuisine, Cocktails, rires et danse.
+                                    <strong>Au programme :</strong> Cibo buono, Cocktail, risate e balli.
                                 </p>
                             </div>
                         )}
@@ -117,8 +117,8 @@ export default function DetailsSection({ weddingData, language = 'fr' }) {
                 {/* FAQ Section */}
                 <div>
                     <div className="text-center mb-10">
-                        <div className="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center shadow-sm mb-6">
-                            <HelpCircle className="w-8 h-8 text-wedding-gold" />
+                        <div className="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center shadow-sm mb-6 text-3xl">
+                            🎊
                         </div>
                         <h3 className="text-3xl font-serif text-gray-800 mb-8">
                             {language === 'it' ? "Domande Frequenti" : "Questions fréquentes"}
@@ -128,7 +128,7 @@ export default function DetailsSection({ weddingData, language = 'fr' }) {
                     <div className="bg-white rounded-2xl shadow-sm border border-wedding-gold/10 p-6 sm:p-8">
                         <FaqItem
                             question={language === 'it' ? "I bambini sono invitati?" : "Les enfants sont-ils invités ?"}
-                            answer={language === 'it' ? "Amiamo i bambini, ma abbiamo deciso che il matrimonio sarà un evento per soli adulti in modo che tutti possano divertirsi e rilassarsi." : "Nous aimons les enfants, mais nous avons décidé que le mariage serait un événement réservé aux adultes pour que tout le monde puisse en profiter et se détendre."}
+                            answer={language === 'it' ? "Cari genitori, considerate il nostro matrimonio come una mini-vacanze per voi. Vi offriamo una giornata senza 'Mammaaaa, Papaaaaa!'" : "Chers parents, considérez notre mariage comme des mini-vacances pour vous. Une journée sans \"Mamaaaan, Papaaaaa!\" vous est offerte !"}
                         />
                     </div>
                 </div>
