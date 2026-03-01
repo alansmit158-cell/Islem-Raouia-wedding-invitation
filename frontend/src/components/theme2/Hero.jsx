@@ -47,11 +47,10 @@ export default function Hero({ weddingData }) {
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 1, delay: 0.3 }}
-                    className="text-7xl sm:text-[8rem] font-script text-[#2F3628] mb-4 leading-none mx-[-1rem] flex flex-col items-center gap-4"
-                    style={{ textShadow: '2px 2px 10px rgba(255,255,255,0.4)' }}
+                    className="text-6xl sm:text-8xl font-serif text-[#4B5345] mb-4 leading-tight flex flex-col items-center gap-6 uppercase tracking-[0.15em]"
                 >
                     <span>{weddingData?.bride}</span>
-                    <img src="/alliances.png" alt="&" className="h-16 sm:h-24 object-contain" />
+                    <img src="/alliances.png" alt="&" className="h-16 sm:h-24 object-contain opacity-90" />
                     <span>{weddingData?.groom}</span>
                 </motion.h1>
 
