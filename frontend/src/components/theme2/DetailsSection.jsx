@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronDown, ChevronUp, Shirt, HelpCircle } from 'lucide-react';
+import React from 'react';
+import { motion } from 'framer-motion';
 
 const Section = ({ children, className = "" }) => (
     <motion.div
@@ -13,40 +12,6 @@ const Section = ({ children, className = "" }) => (
         {children}
     </motion.div>
 );
-
-const FaqItem = ({ question, answer }) => {
-    const [isOpen, setIsOpen] = useState(false);
-
-    return (
-        <div className="border-b border-wedding-gold/20 last:border-0">
-            <button
-                onClick={() => setIsOpen(!isOpen)}
-                className="w-full py-4 flex items-center justify-between text-left gap-4 group"
-            >
-                <span className="font-serif text-lg text-gray-700 group-hover:text-wedding-gold-dark transition-colors">{question}</span>
-                {isOpen ? (
-                    <ChevronUp className="w-5 h-5 text-wedding-gold" />
-                ) : (
-                    <ChevronDown className="w-5 h-5 text-gray-400" />
-                )}
-            </button>
-            <AnimatePresence>
-                {isOpen && (
-                    <motion.div
-                        initial={{ height: 0, opacity: 0 }}
-                        animate={{ height: "auto", opacity: 1 }}
-                        exit={{ height: 0, opacity: 0 }}
-                        className="overflow-hidden"
-                    >
-                        <p className="pb-4 text-gray-500 font-light leading-relaxed">
-                            {answer}
-                        </p>
-                    </motion.div>
-                )}
-            </AnimatePresence>
-        </div>
-    );
-};
 
 export default function DetailsSection({ weddingData, language = 'fr' }) {
     return (
@@ -107,25 +72,6 @@ export default function DetailsSection({ weddingData, language = 'fr' }) {
                                 </p>
                             </div>
                         )}
-                    </div>
-                </div>
-
-                {/* FAQ Section */}
-                <div>
-                    <div className="text-center mb-10">
-                        <div className="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center shadow-sm mb-6">
-                            <HelpCircle className="w-8 h-8 text-wedding-gold" />
-                        </div>
-                        <h3 className="text-3xl font-serif text-gray-800 mb-8">
-                            {language === 'it' ? "Domande Frequenti" : "Questions fréquentes"}
-                        </h3>
-                    </div>
-
-                    <div className="bg-white rounded-2xl shadow-sm border border-wedding-gold/10 p-6 sm:p-8">
-                        <FaqItem
-                            question={language === 'it' ? "I bambini sono invitati?" : "Les enfants sont-ils invités ?"}
-                            answer={language === 'it' ? "Cari genitori, considerate il nostro matrimonio come una mini-vacanze per voi. Vi offriamo una giornata senza 'Mammaaaa, Papaaaaa!'" : "Chers parents, considérez notre mariage comme des mini-vacances pour vous. Une journée sans \"Mamaaaan, Papaaaaa!\" vous est offerte !"}
-                        />
                     </div>
                 </div>
             </div>
