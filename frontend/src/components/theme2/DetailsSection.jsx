@@ -86,8 +86,8 @@ export default function DetailsSection({ weddingData, language = 'fr' }) {
 
                 {/* Night Party Section */}
                 <div className="text-center">
-                    <div className="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center shadow-sm mb-6">
-                        <HelpCircle className="w-8 h-8 text-wedding-gold" />
+                    <div className="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center shadow-sm mb-6 text-3xl">
+                        🎊
                     </div>
                     <h3 className="text-3xl font-serif text-gray-800 mb-8">
                         {language === 'it' ? "✨ La Serata" : "✨ La Soirée"}
@@ -117,8 +117,8 @@ export default function DetailsSection({ weddingData, language = 'fr' }) {
                 {/* FAQ Section */}
                 <div>
                     <div className="text-center mb-10">
-                        <div className="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center shadow-sm mb-6 text-3xl">
-                            🎊
+                        <div className="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center shadow-sm mb-6">
+                            <HelpCircle className="w-8 h-8 text-wedding-gold" />
                         </div>
                         <h3 className="text-3xl font-serif text-gray-800 mb-8">
                             {language === 'it' ? "Domande Frequenti" : "Questions fréquentes"}
