@@ -25,7 +25,7 @@ export default function Location({ weddingData }) {
 
     return (
         <Section>
-            <div className="max-w-3xl mx-auto flex flex-col items-center gap-8">
+            <div className="max-w-xl mx-auto flex flex-col items-center gap-6">
                 <div className="text-center">
                     <MapPin className="w-8 h-8 mx-auto text-wedding-gold mb-4" />
                     <h3 className="text-4xl sm:text-5xl font-script text-wedding-sage mb-2">{weddingData.mapLocationName}</h3>
@@ -33,8 +33,8 @@ export default function Location({ weddingData }) {
                     <p className="text-gray-500 font-light mt-1">{weddingData.welcomeLocation[language] || weddingData.welcomeLocation}</p>
                 </div>
 
-                {/* Map Container */}
-                <div className="w-full h-64 sm:h-80 bg-[#e5e0d8] rounded-2xl overflow-hidden shadow-[inset_0_0_20px_rgba(0,0,0,0.05)] relative group border border-white">
+                {/* Map Container - Smaller size */}
+                <div className="w-full h-48 sm:h-56 bg-[#e5e0d8] rounded-2xl overflow-hidden shadow-[inset_0_0_20px_rgba(0,0,0,0.05)] relative group border border-white">
                     {weddingData.mapIframeSrc ? (
                         <iframe
                             src={weddingData.mapIframeSrc}

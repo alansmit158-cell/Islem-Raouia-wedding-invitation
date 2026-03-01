@@ -22,11 +22,11 @@ export default function Invitation({ weddingData, language }) {
             <Hero weddingData={{ ...weddingData, language }} />
 
             <div className="relative z-10 -mt-20 bg-wedding-sand rounded-t-[3rem] shadow-[0_-10px_40px_rgba(0,0,0,0.05)] pt-0 overflow-hidden">
-                <Location weddingData={{ ...weddingData, language }} />
-
                 <div className="py-12 bg-wedding-sand font-serif">
                     <Countdown targetDate={weddingData.date} language={language} />
                 </div>
+
+                <Location weddingData={{ ...weddingData, language }} />
 
                 <DetailsSection weddingData={weddingData} language={language} />
                 <Timeline weddingData={weddingData} language={language} />
