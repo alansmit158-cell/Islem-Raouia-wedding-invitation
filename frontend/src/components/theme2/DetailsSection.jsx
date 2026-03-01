@@ -64,7 +64,6 @@ export default function DetailsSection({ weddingData, language = 'fr' }) {
                     <div className="grid gap-8 text-left max-w-2xl mx-auto bg-white p-8 rounded-2xl shadow-sm border border-wedding-gold/10">
                         {language === 'it' ? (
                             <div>
-                                <h4 className="font-script text-3xl text-wedding-gold-dark mb-4">Italiano</h4>
                                 <p className="text-gray-600 leading-relaxed">
                                     Siamo lieti di invitarvi a celebrare la nostra unione.<br />
                                     La celebrazione del matrimonio e il ricevimento si terranno presso:<br />
@@ -73,7 +72,6 @@ export default function DetailsSection({ weddingData, language = 'fr' }) {
                             </div>
                         ) : (
                             <div>
-                                <h4 className="font-script text-3xl text-wedding-gold-dark mb-4">Français</h4>
                                 <p className="text-gray-600 leading-relaxed">
                                     Nous avons L'honneur de vous inviter à célébrer notre union.<br />
                                     Le contrat de mariage et la réception auront lieu à :<br />
@@ -96,7 +94,6 @@ export default function DetailsSection({ weddingData, language = 'fr' }) {
                     <div className="grid gap-8 text-left max-w-2xl mx-auto bg-white p-8 rounded-2xl shadow-sm border border-wedding-gold/10">
                         {language === 'it' ? (
                             <div>
-                                <h4 className="font-script text-3xl text-wedding-gold-dark mb-4">Italiano</h4>
                                 <p className="text-gray-600 leading-relaxed">
                                     Festeggiamo insieme ai giovani fino a tarda notte!<br />
                                     <strong>Dalle 21h:00 alle 01h:00</strong>
@@ -104,7 +101,6 @@ export default function DetailsSection({ weddingData, language = 'fr' }) {
                             </div>
                         ) : (
                             <div>
-                                <h4 className="font-script text-3xl text-wedding-gold-dark mb-4">Français</h4>
                                 <p className="text-gray-600 leading-relaxed">
                                     On fait la fête avec les jeunes jusqu'au bout de la nuit !<br />
                                     <strong>De 21h00 à 01h00</strong>
