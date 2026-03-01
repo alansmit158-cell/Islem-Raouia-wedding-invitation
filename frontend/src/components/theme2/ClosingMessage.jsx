@@ -32,19 +32,19 @@ export default function ClosingMessage({ language = 'fr' }) {
     return (
         <Section className="bg-white">
             <div className="max-w-xl mx-auto flex flex-col items-center">
-               <svg 
-                    viewBox="0 0 24 24" 
+               {/* Nouvelle Clé de Sol élégante et proportionnée */}
+                <svg 
+                    viewBox="0 0 50 100" 
                     fill="none" 
-                    stroke="currentColor" 
-                    strokeWidth="1.5" 
+                    stroke="#B5A68A" 
+                    strokeWidth="2.5" 
                     strokeLinecap="round" 
                     strokeLinejoin="round" 
-                    className="w-12 h-12 text-[#B5A68A] opacity-80 mb-8"
+                    className="h-20 w-auto opacity-80 mb-8"
                 >
-                    <path d="M12 22s-4-2.5-4-6c0-4 4.5-5 4.5-9s-1.5-5-1.5-5M11 2s1.5 0 1.5 5-4.5 5-4.5 9c0 3.5 4 6 4 6Z" />
-                    <circle cx="10" cy="17" r="2" />
+                    <path d="M32 90 C 32 95, 20 95, 20 90 C 20 80, 32 75, 32 60 C 32 30, 10 35, 10 55 C 10 70, 25 75, 35 65 C 45 50, 25 5, 25 5 L 25 95" />
+                    <circle cx="22" cy="95" r="3" fill="#B5A68A" />
                 </svg>
-
                 <div className="bg-white px-6 py-1 rounded-full mb-8 shadow-sm">
                     <span className="text-[10px] font-serif tracking-[0.3em] font-bold text-[#4B5345]">
                         {label}
