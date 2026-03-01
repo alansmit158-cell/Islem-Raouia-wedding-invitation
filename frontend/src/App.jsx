@@ -27,17 +27,9 @@ const weddingData = {
   theme: "theme2",
   timeline: [
     {
-      time: "17h:00",
-      title: {
-        fr: "Mahdia Palace (Espace en plein air)",
-        it: "Mahdia Palace (Spazio all'aperto)"
-      },
-      iconName: "MapPin"
-    },
-    {
       time: "17h:00 - 19h:00",
       title: {
-        fr: "Réception & Signature du contrat de mariage",
+        fr: "Réception & Signature du contrat de mariage <br /> (Espace en plein air)",
         it: "Ricevimento & Firma del contratto di matrimonio"
       },
       iconName: "Calendar"
@@ -49,7 +41,7 @@ const weddingData = {
         it: "✨ Serata Giovani"
       },
       description: {
-        fr: "Au programme : Bonne cuisine, Cocktails, rires et danse.",
+        fr: " Soirée festive (réservée aux jeunes)",
         it: "In programma: Ottima cucina, Cocktail, risate e balli."
       },
       iconName: "Music"

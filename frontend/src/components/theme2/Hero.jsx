@@ -64,24 +64,14 @@ export default function Hero({ weddingData }) {
                     <div className="w-2 h-2 rotate-45 bg-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
                 </motion.div>
 
-                <div className="flex flex-col gap-2">
-                    <motion.p
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ duration: 1, delay: 1 }}
-                        className="text-3xl sm:text-4xl font-serif text-white drop-shadow-md italic"
-                    >
-                        {typeof weddingData?.formattedDate === 'object' ? weddingData.formattedDate[lang] : weddingData?.formattedDate}
-                    </motion.p>
-                    <motion.p
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ duration: 1, delay: 1.2 }}
-                        className="text-sm sm:text-base font-serif text-white/90 tracking-[0.3em] uppercase drop-shadow-sm"
-                    >
-                        Mahdia Palace
-                    </motion.p>
-                </div>
+                <motion.p
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 1, delay: 1 }}
+                    className="text-3xl sm:text-4xl font-serif text-white drop-shadow-md italic"
+                >
+                    {typeof weddingData?.formattedDate === 'object' ? weddingData.formattedDate[lang] : weddingData?.formattedDate}
+                </motion.p>
             </div>
 
             {/* Section MODIFIÉE ici pour le multilingue */}
