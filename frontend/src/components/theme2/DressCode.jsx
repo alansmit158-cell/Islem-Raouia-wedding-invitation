@@ -33,9 +33,8 @@ export default function DressCode({ language = 'fr' }) {
             <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-wedding-sand to-transparent pointer-events-none z-0" />
             <div className="max-w-2xl mx-auto">
                 <div className="w-16 h-16 mx-auto bg-wedding-sand rounded-full flex items-center justify-center shadow-sm mb-6 text-3xl">
-                    <img src="../../public/icons8-nœud-papillon-50.png" alt="pp" />
+                        <img src="/icons8-noeud-papillon-50.png" alt="pp" />      
                 </div>
-
                 <h2 className="text-4xl sm:text-5xl font-script text-wedding-gold-dark mb-6">
                     {title}
                 </h2>
