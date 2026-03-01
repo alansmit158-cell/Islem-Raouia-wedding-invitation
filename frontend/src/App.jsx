@@ -14,8 +14,8 @@ const weddingData = {
   groom: "Islem",
   date: "2026-05-03T17:00:00",
   formattedDate: {
-    fr: "03 . 05 . 2026",
-    it: "03 . 05 . 2026"
+    fr: "03 . Mai . 2026",
+    it: "03 . Maggio . 2026"
   },
   location: "Mahdia Palace",
   welcomeLocation: {
