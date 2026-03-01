@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Clef } from 'lucide-react';
 
 const Section = ({ children, className = "" }) => (
     <motion.div
@@ -33,7 +32,18 @@ export default function ClosingMessage({ language = 'fr' }) {
     return (
         <Section className="bg-white">
             <div className="max-w-xl mx-auto flex flex-col items-center">
-                <Clef className="w-10 h-10 text-wedding-gold opacity-60 mb-8" />
+               <svg 
+                    viewBox="0 0 24 24" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    strokeWidth="1.5" 
+                    strokeLinecap="round" 
+                    strokeLinejoin="round" 
+                    className="w-12 h-12 text-wedding-gold opacity-60 mb-8"
+                >
+                    <path d="M12 22s-4-2.5-4-6c0-4 4.5-5 4.5-9s-1.5-5-1.5-5M11 2s1.5 0 1.5 5-4.5 5-4.5 9c0 3.5 4 6 4 6Z" />
+                    <circle cx="10" cy="17" r="2" />
+                </svg>
 
                 <div className="bg-white px-6 py-1 rounded-full mb-8 shadow-sm">
                     <span className="text-[10px] font-serif tracking-[0.3em] font-bold text-[#4B5345]">
