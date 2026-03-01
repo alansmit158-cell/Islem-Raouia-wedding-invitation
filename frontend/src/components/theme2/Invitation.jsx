@@ -29,7 +29,6 @@ export default function Invitation({ weddingData, language }) {
                 </div>
 
                 <DetailsSection weddingData={weddingData} language={language} />
-                <Timeline weddingData={weddingData} language={language} />
 
                 <DressCode language={language} />
 
