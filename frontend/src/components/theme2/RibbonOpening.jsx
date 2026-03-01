@@ -18,7 +18,11 @@ export default function RibbonOpening({ onOpen, onMusicStart, wedding }) {
     };
 
     return (
-        <div className="h-[100dvh] w-full relative overflow-hidden bg-[#E5E0D8] perspective-[2000px]">
+        <motion.div
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1.5 }}
+            className="h-[100dvh] w-full relative overflow-hidden bg-[#E5E0D8] perspective-[2000px]"
+        >
 
             {/* --- LEFT DOOR (Curtain) --- */}
             <motion.div
@@ -92,6 +96,6 @@ export default function RibbonOpening({ onOpen, onMusicStart, wedding }) {
                 </div>
             )}
 
-        </div>
+        </motion.div>
     );
 }

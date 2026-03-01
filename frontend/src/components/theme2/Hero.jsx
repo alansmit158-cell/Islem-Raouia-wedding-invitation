@@ -48,10 +48,10 @@ export default function Hero({ weddingData }) {
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 1, delay: 0.3 }}
-                    className="text-4xl sm:text-6xl font-serif text-[#4B5345] mb-4 leading-tight flex flex-col items-center gap-6 uppercase tracking-[0.2em]"
+                    className="text-6xl sm:text-8xl font-script text-[#4B5345] mb-4 leading-tight flex flex-col items-center gap-4 py-4"
                 >
                     <span>{weddingData?.bride}</span>
-                    <img src="/alliances.png" alt="&" className="h-12 sm:h-20 object-contain opacity-80" />
+                    <img src="/alliances.png" alt="&" className="h-12 sm:h-20 object-contain opacity-60" />
                     <span>{weddingData?.groom}</span>
                 </motion.h1>
 
@@ -59,19 +59,29 @@ export default function Hero({ weddingData }) {
                     initial={{ width: 0 }}
                     animate={{ width: "100px" }}
                     transition={{ duration: 1, delay: 0.8 }}
-                    className="h-[1px] bg-white/80 mx-auto my-8 shadow-lg relative flex justify-center items-center"
+                    className="h-[1px] bg-white/80 mx-auto my-6 shadow-lg relative flex justify-center items-center"
                 >
                     <div className="w-2 h-2 rotate-45 bg-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
                 </motion.div>
 
-                <motion.p
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 1, delay: 1 }}
-                    className="text-3xl sm:text-4xl font-serif text-white drop-shadow-md italic"
-                >
-                    {typeof weddingData?.formattedDate === 'object' ? weddingData.formattedDate[lang] : weddingData?.formattedDate}
-                </motion.p>
+                <div className="flex flex-col gap-2">
+                    <motion.p
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 1, delay: 1 }}
+                        className="text-3xl sm:text-4xl font-serif text-white drop-shadow-md italic"
+                    >
+                        {typeof weddingData?.formattedDate === 'object' ? weddingData.formattedDate[lang] : weddingData?.formattedDate}
+                    </motion.p>
+                    <motion.p
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 1, delay: 1.2 }}
+                        className="text-sm sm:text-base font-serif text-white/90 tracking-[0.3em] uppercase drop-shadow-sm"
+                    >
+                        Mahdia Palace
+                    </motion.p>
+                </div>
             </div>
 
             {/* Section MODIFIÉE ici pour le multilingue */}
