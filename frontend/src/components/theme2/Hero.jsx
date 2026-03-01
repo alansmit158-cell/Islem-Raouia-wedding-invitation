@@ -29,9 +29,9 @@ export default function Hero({ weddingData }) {
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
-                    className="text-white drop-shadow-md tracking-[0.2em] text-xs sm:text-sm uppercase mb-6 font-semibold bg-black/10 px-3 py-1 rounded-full backdrop-blur-[2px]"
+                    className="text-[#4B5345] drop-shadow-sm tracking-[0.2em] text-xs sm:text-sm uppercase mb-6 font-bold bg-white/90 px-4 py-1.5 rounded-full shadow-sm"
                 >
-                    {lang === 'it' ? 'CI SPOSIAMO' : 'NOUS NOUS MARIONS'}
+                    WE'RE GETTING MARRIED
                 </motion.p>
 
                 <motion.h1
