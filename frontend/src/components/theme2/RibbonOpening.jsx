@@ -14,7 +14,7 @@ export default function RibbonOpening({ onOpen, onMusicStart, wedding }) {
         // 3. Delay content switch to match the door animation
         setTimeout(() => {
             if (onOpen) onOpen();
-        }, 4000);
+        }, 1000);
     };
 
     return (
