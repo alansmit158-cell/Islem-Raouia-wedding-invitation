@@ -39,7 +39,7 @@ export default function ClosingMessage({ language = 'fr' }) {
                     strokeWidth="1.5" 
                     strokeLinecap="round" 
                     strokeLinejoin="round" 
-                    className="w-12 h-12 text-wedding-gold opacity-60 mb-8"
+                    className="w-12 h-12 text-[#B5A68A] opacity-80 mb-8"
                 >
                     <path d="M12 22s-4-2.5-4-6c0-4 4.5-5 4.5-9s-1.5-5-1.5-5M11 2s1.5 0 1.5 5-4.5 5-4.5 9c0 3.5 4 6 4 6Z" />
                     <circle cx="10" cy="17" r="2" />
