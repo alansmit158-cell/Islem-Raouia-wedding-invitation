@@ -67,8 +67,11 @@ function App() {
         const response = await fetch(`${API_URL}/api/weddings/raouia-islem`);
         if (response.ok) {
           const data = await response.json();
-          // Merge dynamic fields into static weddingData
-          setLiveWeddingData(prev => ({ ...prev, ...data }));
+          // Merge dynamic fields but protect the local timeline
+          setLiveWeddingData(prev => {
+            const { timeline, ...rest } = data;
+            return { ...prev, ...rest };
+          });
         }
       } catch (error) {
         console.warn("Could not fetch live wedding data, using defaults:", error);
