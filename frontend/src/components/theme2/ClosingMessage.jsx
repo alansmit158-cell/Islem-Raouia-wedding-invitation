@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Music } from 'lucide-react';
+import { Clef } from 'lucide-react';
 
 const Section = ({ children, className = "" }) => (
     <motion.div
