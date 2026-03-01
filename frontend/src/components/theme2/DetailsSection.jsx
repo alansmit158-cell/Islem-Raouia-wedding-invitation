@@ -24,22 +24,16 @@ export default function DetailsSection({ weddingData, language = 'fr' }) {
                             <div>
                                 <p className="text-gray-600 leading-relaxed">
                                     Siamo lieti di invitarvi a celebrare la nostra unione.<br />
-                                    
                                 </p>
                             </div>
                         ) : (
                             <div>
                                 <p className="text-gray-600 leading-relaxed">
                                     C'est avec beaucoup d'émotion que nous vous convions à notre mariage.<br />
-
                                 </p>
                             </div>
                         )}
                     </div>
-                </div>
-     
-
-                    
                 </div>
             </div>
         </Section>

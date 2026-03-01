@@ -22,6 +22,7 @@ export default function Hero({ weddingData }) {
                 <video
                     ref={videoRef}
                     src="/bg-wedding.mp4"
+                    poster="/poster.webp"
                     autoPlay
                     loop
                     muted
