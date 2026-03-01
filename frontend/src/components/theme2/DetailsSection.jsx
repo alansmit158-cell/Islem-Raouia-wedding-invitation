@@ -99,8 +99,7 @@ export default function DetailsSection({ weddingData, language = 'fr' }) {
                                 <h4 className="font-script text-3xl text-wedding-gold-dark mb-4">Italiano</h4>
                                 <p className="text-gray-600 leading-relaxed">
                                     Festeggiamo insieme ai giovani fino a tarda notte!<br /><br />
-                                    <strong>De 21:00 a 01:00</strong><br />
-                                    <strong>In programma:</strong> Una serata festiva dedicata ai giovani.
+                                    <strong>De 21:00 a 01:00</strong>
                                 </p>
                             </div>
                         ) : (
@@ -108,8 +107,7 @@ export default function DetailsSection({ weddingData, language = 'fr' }) {
                                 <h4 className="font-script text-3xl text-wedding-gold-dark mb-4">Français</h4>
                                 <p className="text-gray-600 leading-relaxed">
                                     On fait la fête avec les jeunes jusqu'au bout de la nuit !<br /><br />
-                                    <strong>De 21h00 à 01h00</strong><br />
-                                    <strong>Au programme :</strong> Une soirée festive dédiée à la jeunesse.
+                                    <strong>De 21h00 à 01h00</strong>
                                 </p>
                             </div>
                         )}
