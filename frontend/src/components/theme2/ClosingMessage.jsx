@@ -33,7 +33,7 @@ export default function ClosingMessage({ language = 'fr' }) {
     return (
         <Section className="bg-white">
             <div className="max-w-xl mx-auto flex flex-col items-center">
-                <Music className="w-10 h-10 text-wedding-gold opacity-60 mb-8" />
+                <Music2 className="w-10 h-10 text-wedding-gold opacity-60 mb-8" />
 
                 <div className="bg-white px-6 py-1 rounded-full mb-8 shadow-sm">
                     <span className="text-[10px] font-serif tracking-[0.3em] font-bold text-[#4B5345]">
