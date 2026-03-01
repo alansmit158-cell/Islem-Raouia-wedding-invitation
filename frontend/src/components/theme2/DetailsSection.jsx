@@ -66,7 +66,7 @@ export default function DetailsSection({ weddingData, language = 'fr' }) {
                             <div>
                                 <h4 className="font-script text-3xl text-wedding-gold-dark mb-4">Italiano</h4>
                                 <p className="text-gray-600 leading-relaxed">
-                                    Siamo lieti di invitarvi a celebrare la nostra unione.<br /><br />
+                                    Siamo lieti di invitarvi a celebrare la nostra unione.<br />
                                     La celebrazione del matrimonio e il ricevimento si terranno presso:<br />
                                     <strong>Mahdia Palace (Spazio all'aperto) Dalle 17:00 alle 19:00</strong>
                                 </p>
@@ -75,7 +75,7 @@ export default function DetailsSection({ weddingData, language = 'fr' }) {
                             <div>
                                 <h4 className="font-script text-3xl text-wedding-gold-dark mb-4">Français</h4>
                                 <p className="text-gray-600 leading-relaxed">
-                                    Nous avons L'honneur de vous inviter à célébrer notre union.<br /><br />
+                                    Nous avons L'honneur de vous inviter à célébrer notre union.<br />
                                     Le contrat de mariage et la réception auront lieu à :<br />
                                     <strong>Mahdia Palace (Espace en plein air) <br />  De 17h00 à 19h00</strong>
                                 </p>
