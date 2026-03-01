@@ -19,11 +19,6 @@ export default function DetailsSection({ weddingData, language = 'fr' }) {
             <div className="max-w-3xl mx-auto space-y-16">
                 {/* Content Section */}
                 <div className="text-center">
-                    <div className="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center shadow-sm mb-6 text-3xl">
-                        🥂
-                    </div>
-    
-
                     <div className="grid gap-8 text-left max-w-2xl mx-auto bg-white p-8 rounded-2xl shadow-sm border border-wedding-gold/10">
                         {language === 'it' ? (
                             <div>
