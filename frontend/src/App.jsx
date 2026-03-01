@@ -103,21 +103,25 @@ function App() {
       </div>
 
       <MusicPlayer phase={isPlaying ? 'main' : 'intro'} />
+
+      {/* Invitation always rendered in background so video loads immediately */}
+      <Invitation weddingData={liveWeddingData} language={language} />
+
+      {/* Ribbon as a full-screen overlay on top - fades out when opened */}
       <AnimatePresence>
-        {!isEnvelopeOpen ? (
-          <RibbonOpening
-            key="ribbon"
-            wedding={{ ...liveWeddingData, language }}
-            onOpen={() => {
-              setIsEnvelopeOpen(true);
-              handleOpen();
-            }}
-            onMusicStart={() => {
-              if (!isPlaying) toggleMusic();
-            }}
-          />
-        ) : (
-          <Invitation key="invitation" weddingData={liveWeddingData} language={language} />
+        {!isEnvelopeOpen && (
+          <motion.div
+            key="ribbon-overlay"
+            className="fixed inset-0 z-50"
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1.2, ease: "easeInOut" }}
+          >
+            <RibbonOpening
+              wedding={{ ...liveWeddingData, language }}
+              onOpen={handleOpen}
+              onMusicStart={() => { if (!isPlaying) toggleMusic(); }}
+            />
+          </motion.div>
         )}
       </AnimatePresence>
     </>
