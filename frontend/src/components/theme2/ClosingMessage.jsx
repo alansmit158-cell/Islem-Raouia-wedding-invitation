@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Music2 } from 'lucide-react';
+import { Clef } from 'lucide-react';
 
 const Section = ({ children, className = "" }) => (
     <motion.div
@@ -33,7 +33,7 @@ export default function ClosingMessage({ language = 'fr' }) {
     return (
         <Section className="bg-white">
             <div className="max-w-xl mx-auto flex flex-col items-center">
-                <Music2 className="w-10 h-10 text-wedding-gold opacity-60 mb-8" />
+                <Clef className="w-10 h-10 text-wedding-gold opacity-60 mb-8" />
 
                 <div className="bg-white px-6 py-1 rounded-full mb-8 shadow-sm">
                     <span className="text-[10px] font-serif tracking-[0.3em] font-bold text-[#4B5345]">
