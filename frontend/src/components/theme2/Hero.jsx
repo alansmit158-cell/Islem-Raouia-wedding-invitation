@@ -38,10 +38,12 @@ export default function Hero({ weddingData }) {
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 1, delay: 0.3 }}
-                    className="text-7xl sm:text-[8rem] font-script text-[#2F3628] mb-4 leading-none mx-[-1rem]"
+                    className="text-7xl sm:text-[8rem] font-script text-[#2F3628] mb-4 leading-none mx-[-1rem] flex flex-col items-center gap-4"
                     style={{ textShadow: '2px 2px 10px rgba(255,255,255,0.4)' }}
                 >
-                    {weddingData?.bride} <img src="/alliances.png" alt="&" className="inline-block h-12 sm:h-20 mx-2 sm:mx-4 align-middle object-contain" /> {weddingData?.groom}
+                    <span>{weddingData?.bride}</span>
+                    <img src="/alliances.png" alt="&" className="h-16 sm:h-24 object-contain" />
+                    <span>{weddingData?.groom}</span>
                 </motion.h1>
 
                 <motion.div
