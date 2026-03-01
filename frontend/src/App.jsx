@@ -50,8 +50,8 @@ const weddingData = {
         it: "✨ Serata Giovani"
       },
       description: {
-        fr: "On se dit Oui, et on fait la fête jusqu'au bout de la nuit ! Au programme : Bonne cuisine, Cocktails, rires et danse.",
-        it: "Diciamo di Sì e festeggiamo fino a notte fonda! In programma: Ottima cucina, Cocktail, risate e balli."
+        fr: "Au programme : Bonne cuisine, Cocktails, rires et danse.",
+        it: "In programma: Ottima cucina, Cocktail, risate e balli."
       },
       iconName: "Music"
     }
