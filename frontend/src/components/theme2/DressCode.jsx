@@ -1,5 +1,5 @@
 import React from 'react';
-import noeudIcon from './icons8-noeud-papillon-50.png';
+import noeudIcon from './Icons8-Noeud-papillon-50.png';
 import { motion } from 'framer-motion';
 
 const Section = ({ children, className = "" }) => (
