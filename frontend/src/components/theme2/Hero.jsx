@@ -1,7 +1,16 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 export default function Hero({ weddingData }) {
+    const videoRef = useRef(null);
+
+    useEffect(() => {
+        if (videoRef.current) {
+            videoRef.current.play().catch(error => {
+                console.log("Video autoplay was prevented:", error);
+            });
+        }
+    }, []);
     // Définition de la langue pour plus de clarté
     const lang = weddingData?.language || 'fr';
 
@@ -11,13 +20,13 @@ export default function Hero({ weddingData }) {
             {/* Anti-Gravity Parallax Background */}
             <div className="absolute inset-0 overflow-hidden z-0">
                 <video
+                    ref={videoRef}
                     src="/bg-wedding.mp4"
                     autoPlay
                     loop
                     muted
                     playsInline
-                    preload="none"
-                    poster="/poster.webp"
+                    preload="auto"
                     className="w-full h-full object-cover animate-fade-in scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/10"></div>
