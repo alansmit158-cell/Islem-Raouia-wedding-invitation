@@ -60,7 +60,7 @@ export default function Timeline({ weddingData, language = 'fr' }) {
                 className="text-center mb-10 sm:mb-16"
             >
                 <h3 className="text-3xl font-serif text-gray-800 mb-2">
-                    {language === 'it' ? "Programma dell'Unione" : "Programme de l'Union"}
+                    {language === 'it' ? "Programma dell'unione" : "Programme de l'Union"}
                 </h3>
                 <p className="text-gray-400 italic">
                     {language === 'it' ? "Una giornata indimenticabile" : "Une journée inoubliable"}
