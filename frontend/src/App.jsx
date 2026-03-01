@@ -32,12 +32,14 @@ const weddingData = {
       title: {
         fr: "La Cérémonie & Réception",
         it: "La Cerimonia & Ricevimento"
+        fr: "Réception & Signature du contrat de mariage",
+        it: "Ricevimento & Firma del contratto di matrimonio"
       },
-      iconName: "Calendar",
       description: {
-        fr: "Signature du contrat de mariage et réception au Mahdia Palace (Espace plein air).",
-        it: "Firma del contratto di matrimonio e ricevimento presso Mahdia Palace (Spazio all'aperto)."
-      }
+        fr: "Célébration officielle de l'union.",
+        it: "Celebrazione ufficiale dell'unione."
+      },
+      iconName: "Calendar"
     },
     {
       time: "21:00 - 01:00",
