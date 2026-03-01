@@ -16,24 +16,18 @@ const Section = ({ children, className = "" }) => (
 export default function DetailsSection({ weddingData, language = 'fr' }) {
     return (
         <Section className="bg-wedding-sand">
-            <div className="max-w-3xl mx-auto space-y-16">
-                {/* Content Section */}
-                <div className="text-center">
-                    <div className="grid gap-8 text-left max-w-2xl mx-auto bg-white p-8 rounded-2xl shadow-sm border border-wedding-gold/10">
-                        {language === 'it' ? (
-                            <div>
-                                <p className="text-gray-600 leading-relaxed">
-                                    Siamo lieti di invitarvi a celebrare la nostra unione.<br />
-                                </p>
-                            </div>
-                        ) : (
-                            <div>
-                                <p className="text-gray-600 leading-relaxed">
-                                    C'est avec beaucoup d'émotion que nous vous convions à notre mariage.<br />
-                                </p>
-                            </div>
-                        )}
-                    </div>
+            <div className="max-w-3xl mx-auto">
+                {/* Content Section - Minimalist Luxe */}
+                <div className="text-center px-4">
+                    {language === 'it' ? (
+                        <p className="text-gray-700 font-serif italic text-2xl sm:text-3xl leading-relaxed tracking-wide">
+                            Siamo lieti di invitarvi <br className="hidden sm:block" /> a celebrare la nostra unione.
+                        </p>
+                    ) : (
+                        <p className="text-gray-700 font-serif italic text-2xl sm:text-3xl leading-relaxed tracking-wide">
+                            C'est avec beaucoup d'émotion <br className="hidden sm:block" /> que nous vous convions à notre mariage.
+                        </p>
+                    )}
                 </div>
             </div>
         </Section>
