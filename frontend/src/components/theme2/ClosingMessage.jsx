@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import noeudIcon from './50.png';
+import noeudIconf from './50.png';
 
 const Section = ({ children, className = "" }) => (
     <motion.div
@@ -35,20 +35,8 @@ export default function ClosingMessage({ language = 'fr' }) {
             <div className="max-w-xl mx-auto flex flex-col items-center">
               <div className="mb-8 mx-auto flex justify-center">
     <div className="flex justify-center mb-8">
-    <svg 
-        viewBox="0 0 40 100" 
-        fill="none" 
-        stroke="#B5A68A" 
-        strokeWidth="2.5" 
-        strokeLinecap="round" 
-        strokeLinejoin="round" 
-        style={{ height: '90px', width: 'auto' }}
-        className="opacity-90"
-    >
-        {/* Le tracé de la Clé de Sol élégante */}
-        <path d="M28,85 C28,95 18,95 18,85 C18,75 28,70 28,55 C28,25 10,30 10,50 C10,65 22,70 32,60 C40,50 25,5 25,5 L25,92" />
-        <circle cx="22" cy="95" r="3" fill="#B5A68A" />
-    </svg>
+                        <img src={noeudIconf} alt="pp" />      
+
 </div>
 </div>
             
