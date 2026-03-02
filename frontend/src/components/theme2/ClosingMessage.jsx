@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import noeudIconf from './50.png';
+import noeudIconf from './51.png';
 
 const Section = ({ children, className = "" }) => (
     <motion.div
