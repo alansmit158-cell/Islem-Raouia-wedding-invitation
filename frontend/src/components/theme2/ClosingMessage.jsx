@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import noeudIcon from './50.png';
 
 const Section = ({ children, className = "" }) => (
     <motion.div
