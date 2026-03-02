@@ -22,6 +22,11 @@ export default function RsvpSection({ weddingData, language = 'fr' }) {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isSubmitted, setIsSubmitted] = useState(false);
     const [confirmedCount, setConfirmedCount] = useState(weddingData?.confirmedGuests || 0);
+    useEffect(() => {
+        if (weddingData?.confirmedGuests !== undefined) {
+            setConfirmedCount(weddingData.confirmedGuests);
+        }
+    }, [weddingData?.confirmedGuests]);
     const maxGuests = weddingData?.maxGuests || 200;
     const remainingSeats = maxGuests - confirmedCount;
 
