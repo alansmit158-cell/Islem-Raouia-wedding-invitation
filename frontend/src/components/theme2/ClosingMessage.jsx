@@ -32,27 +32,20 @@ export default function ClosingMessage({ language = 'fr' }) {
     return (
         <Section className="bg-white">
             <div className="max-w-xl mx-auto flex flex-col items-center">
-              <svg 
-    viewBox="0 0 50 100" 
-    fill="none" 
-    stroke="#B5A68A" 
-    strokeWidth="2" 
-    strokeLinecap="round" 
-    strokeLinejoin="round" 
-    className="h-24 w-auto opacity-90 mb-8 mx-auto"
->
-    {/* Tracé complet et élégant de la clé de sol */}
-    <path d="
-        M 30 85 
-        C 30 95, 18 95, 18 85 
-        C 18 75, 30 70, 30 55 
-        C 30 25, 10 30, 10 50 
-        C 10 65, 25 70, 35 60 
-        C 45 45, 25 5, 25 5 
-        L 25 90
-    " />
-    <circle cx="22" cy="92" r="2.5" fill="#B5A68A" />
-</svg>
+              <div className="mb-8 mx-auto flex justify-center">
+    <svg 
+        viewBox="0 0 50 100" 
+        fill="none" 
+        stroke="#B5A68A" 
+        strokeWidth="2.5" 
+        strokeLinecap="round" 
+        strokeLinejoin="round" 
+        style={{ height: '80px', width: 'auto', opacity: 0.8 }}
+    >
+        <path d="M30 85 C30 95, 18 95, 18 85 C18 75, 30 70, 30 55 C30 25, 10 30, 10 50 C10 65, 25 70, 35 60 C45 45, 25 5, 25 5 L25 90" />
+        <circle cx="22" cy="92" r="2.5" fill="#B5A68A" />
+    </svg>
+</div>
             
                 <div className="bg-white px-6 py-1 rounded-full mb-8 shadow-sm">
                     <span className="text-[10px] font-serif tracking-[0.3em] font-bold text-[#4B5345]">
