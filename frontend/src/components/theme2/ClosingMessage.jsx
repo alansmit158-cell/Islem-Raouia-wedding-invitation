@@ -35,7 +35,7 @@ export default function ClosingMessage({ language = 'fr' }) {
             <div className="max-w-xl mx-auto flex flex-col items-center">
               <div className="mb-8 mx-auto flex justify-center">
     <div className="flex justify-center mb-8">
-                        <img src={noeudIconf} alt="pp" />      
+                        <img src={noeudIconf} alt="pp" style={{ height: '90px', width: 'auto' }}/>      
 
 </div>
 </div>
