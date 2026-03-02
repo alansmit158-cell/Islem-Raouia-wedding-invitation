@@ -32,22 +32,26 @@ export default function ClosingMessage({ language = 'fr' }) {
     return (
         <Section className="bg-white">
             <div className="max-w-xl mx-auto flex flex-col items-center">
-               {/* Clé de sol réaliste et proportionnée */}
-{/* Section de l'icône Clé de Sol corrigée selon l'analyse technique */}
-<svg 
+              <svg 
     viewBox="0 0 50 100" 
     fill="none" 
     stroke="#B5A68A" 
-    strokeWidth="2.5" 
+    strokeWidth="2" 
     strokeLinecap="round" 
     strokeLinejoin="round" 
-    className="h-24 w-auto opacity-90 mb-8"
+    className="h-24 w-auto opacity-90 mb-8 mx-auto"
 >
-    {/* Premier segment : Boucle supérieure enserrant la 2e ligne */}
-    <path d="M25,5 C34,20 40,40 24,60 C20,75 30,90 25,95" />
-    
-    {/* Cercle final aligné sur l'extrémité du trait vertical */}
-    <circle cx="25" cy="95" r="3" fill="#B5A68A" />
+    {/* Tracé complet et élégant de la clé de sol */}
+    <path d="
+        M 30 85 
+        C 30 95, 18 95, 18 85 
+        C 18 75, 30 70, 30 55 
+        C 30 25, 10 30, 10 50 
+        C 10 65, 25 70, 35 60 
+        C 45 45, 25 5, 25 5 
+        L 25 90
+    " />
+    <circle cx="22" cy="92" r="2.5" fill="#B5A68A" />
 </svg>
             
                 <div className="bg-white px-6 py-1 rounded-full mb-8 shadow-sm">
