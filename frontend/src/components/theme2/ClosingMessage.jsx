@@ -33,18 +33,22 @@ export default function ClosingMessage({ language = 'fr' }) {
         <Section className="bg-white">
             <div className="max-w-xl mx-auto flex flex-col items-center">
               <div className="mb-8 mx-auto flex justify-center">
+    <div className="flex justify-center mb-8">
     <svg 
-        viewBox="0 0 50 100" 
+        viewBox="0 0 40 100" 
         fill="none" 
         stroke="#B5A68A" 
         strokeWidth="2.5" 
         strokeLinecap="round" 
         strokeLinejoin="round" 
-        style={{ height: '80px', width: 'auto', opacity: 0.8 }}
+        style={{ height: '90px', width: 'auto' }}
+        className="opacity-90"
     >
-        <path d="M30 85 C30 95, 18 95, 18 85 C18 75, 30 70, 30 55 C30 25, 10 30, 10 50 C10 65, 25 70, 35 60 C45 45, 25 5, 25 5 L25 90" />
-        <circle cx="22" cy="92" r="2.5" fill="#B5A68A" />
+        {/* Le tracé de la Clé de Sol élégante */}
+        <path d="M28,85 C28,95 18,95 18,85 C18,75 28,70 28,55 C28,25 10,30 10,50 C10,65 22,70 32,60 C40,50 25,5 25,5 L25,92" />
+        <circle cx="22" cy="95" r="3" fill="#B5A68A" />
     </svg>
+</div>
 </div>
             
                 <div className="bg-white px-6 py-1 rounded-full mb-8 shadow-sm">
