@@ -46,7 +46,9 @@ const weddingData = {
       },
       iconName: "Music"
     }
-  ]
+  ],
+  maxGuests: 200,
+  confirmedGuests: 0
 };
 
 function App() {

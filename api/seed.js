@@ -21,8 +21,9 @@ async function seed() {
 
         const existing = await Wedding.findOne({ id: weddingData.id });
         if (existing) {
-            console.log('Wedding already exists, updating...');
-            await Wedding.findOneAndUpdate({ id: weddingData.id }, weddingData);
+            console.log('Wedding already exists, updating (excluding confirmedGuests)...');
+            const { confirmedGuests, ...updateData } = weddingData;
+            await Wedding.findOneAndUpdate({ id: weddingData.id }, updateData);
         } else {
             await Wedding.create(weddingData);
             console.log('Wedding created successfully');
