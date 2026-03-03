@@ -29,9 +29,13 @@ const weddingData = {
     {
       time: "17h:00 - 19h:00",
       title: {
-        fr: "Réception & Signature du contrat de mariage        (Espace en plein air)",
-        it: "Ricevimento & Firma del contratto di matrimonio"
+        fr: "🕊️Réception & Signature du contrat de mariage        ",
+        it: "🕊️Ricevimento & Firma del contratto di matrimonio"
       },
+      description: {
+        fr: "(Espace en plein air)",
+        it: "(Spazio all'aperto)"
+      },      
       iconName: "Calendar"
     },
     {
