@@ -25,7 +25,7 @@ export default function DetailsSection({ weddingData, language = 'fr' }) {
                         </p>
                     ) : (
                         <p className="text-gray-700 font-script text-4xl sm:text-5xl leading-relaxed tracking-wide">
-                            C'est avec beaucoup d'émotion <br className="hidden sm:block" /> que nous vous convions à notre mariage.
+                            C'est avec beaucoup d'émotions <br className="hidden sm:block" /> que nous vous convions à notre mariage.
                         </p>
                     )}
                 </div>
