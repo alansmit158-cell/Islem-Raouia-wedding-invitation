@@ -18,12 +18,13 @@ const weddingData = {
     it: "03 . Maggio . 2026"
   },
   welcomeLocation: {
-    fr: "Mahdia Palace, Zone Touristique, Mahdia",
-    it: "Mahdia Palace, Zona Turistica, Mahdia"
+    fr: "Hôtel Nour Palace Resort & Thalasso, Hiboun, Mahdia",
+    it: "Hotel Nour Palace Resort & Thalasso, Hiboun, Mahdia"
   },
+  mapLocationName: "Hôtel Nour Palace",
 
-  mapIframeSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.256265008595!2d11.027299576405327!3d35.53953013778844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x130223009bc03b6b%3A0x1fe5fe325a938940!2sMahdia%20Palace%20Thalasso!5e0!3m2!1sfr!2stn!4v1740691000000!5m2!1sfr!2stn",
-  mapLinkInfo: "https://maps.app.goo.gl/xsKBTKf5zyZkd3aP9",
+  mapIframeSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.6!2d11.03154!3d35.53681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13022376b4e69c4f%3A0x3b2f3e4d5c6a7b8e!2sH%C3%B4tel%20Nour%20Palace%20Resort%20%26%20Thalasso!5e0!3m2!1sfr!2stn!4v1741697000000!5m2!1sfr!2stn",
+  mapLinkInfo: "https://maps.app.goo.gl/Lrb93w5yo4wadLJ28",
   theme: "theme2",
   timeline: [
     {
@@ -68,9 +69,9 @@ function App() {
         const response = await fetch(`${API_URL}/api/weddings/raouia-islem`);
         if (response.ok) {
           const data = await response.json();
-          // Merge dynamic fields but protect the local timeline
+          // Merge dynamic fields but protect the local timeline and location data
           setLiveWeddingData(prev => {
-            const { timeline, ...rest } = data;
+            const { timeline, welcomeLocation, mapIframeSrc, mapLinkInfo, mapLocationName, location, ...rest } = data;
             return { ...prev, ...rest };
           });
         }
