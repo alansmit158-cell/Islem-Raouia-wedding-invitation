@@ -30,7 +30,6 @@ export default function Location({ weddingData }) {
                     <MapPin className="w-8 h-8 mx-auto text-wedding-gold mb-4" />
                     <h3 className="text-4xl sm:text-5xl font-script text-wedding-sage mb-2">{weddingData.mapLocationName}</h3>
                     <p className="font-serif text-gray-600 text-lg">{weddingData.location}</p>
-                    <p className="text-gray-500 font-light mt-1">{weddingData.welcomeLocation[language] || weddingData.welcomeLocation}</p>
                 </div>
 
                 {/* Map Container - Smaller size */}
