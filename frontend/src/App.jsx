@@ -33,10 +33,7 @@ const weddingData = {
         fr: "🕊️Réception & Signature du contrat de mariage        ",
         it: "🕊️Ricevimento & Firma del contratto di matrimonio"
       },
-      description: {
-        fr: "(Espace en plein air)",
-        it: "(Spazio all'aperto)"
-      },      
+      
       iconName: "Calendar"
     },
     {
